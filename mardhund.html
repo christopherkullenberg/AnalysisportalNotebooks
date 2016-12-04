@@ -1,0 +1,1248 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_d53520f8cd9541b1866ae1fb614d077f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_d53520f8cd9541b1866ae1fb614d077f" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_d53520f8cd9541b1866ae1fb614d077f = L.map('map_d53520f8cd9541b1866ae1fb614d077f', {
+                                           center:[62.128,18.6435],
+                                           zoom: 4,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_05a5ff1c32f6451bbbd3396ad6341ba7 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+
+        
+        
+            
+
+            var marker_9f1088d615214da7b706e6c4454289d0 = L.marker(
+                [65.780216527,21.658947439],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_d2537ba51d8a4f0ab162da4ffa43a1b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_46f37e8dcbb34669aaf1039fe338d3eb = $('         <div id="html_46f37e8dcbb34669aaf1039fe338d3eb"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Grustäkten, BDX, S Rödberget, Norrbotten | Koordinatnogrannhet (m): 250 | 2008-11-16 | Artportalen | Latitud: 21.658947439 | Longitud: 65.780216527</div>                 ')[0];
+                popup_d2537ba51d8a4f0ab162da4ffa43a1b3.setContent(html_46f37e8dcbb34669aaf1039fe338d3eb);
+            
+
+            marker_9f1088d615214da7b706e6c4454289d0.bindPopup(popup_d2537ba51d8a4f0ab162da4ffa43a1b3);
+
+            
+        
+        
+            
+
+            var marker_008d7920638c4d7689073496d2bf8fee = L.marker(
+                [65.911685901,22.081856308],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_745e393dc5994edf89afd8f9643b6d0d = L.popup({maxWidth: '300'});
+
+            
+                var html_dadcfd2abf5e4a9aa92052c342cdba54 = $('         <div id="html_dadcfd2abf5e4a9aa92052c342cdba54"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Söribäcken, Mossabäcken V Prästholm, Norrbotten | Koordinatnogrannhet (m): 50 | 2008-11-16 | Artportalen | Latitud: 22.081856308 | Longitud: 65.911685901</div>                 ')[0];
+                popup_745e393dc5994edf89afd8f9643b6d0d.setContent(html_dadcfd2abf5e4a9aa92052c342cdba54);
+            
+
+            marker_008d7920638c4d7689073496d2bf8fee.bindPopup(popup_745e393dc5994edf89afd8f9643b6d0d);
+
+            
+        
+        
+            
+
+            var marker_14167495547546c6b59339f86d543fb1 = L.marker(
+                [56.894863619,12.875786529],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_2a2f7136e57e48119e3fcc22cff3389b = L.popup({maxWidth: '300'});
+
+            
+                var html_3ac17098c19942f99b11bfd1f5112742 = $('         <div id="html_3ac17098c19942f99b11bfd1f5112742"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Nils Östen Nilsson | Gräsås, Halland | Koordinatnogrannhet (m): 50 | 2010-08-21 | Artportalen | Latitud: 12.875786529 | Longitud: 56.894863619</div>                 ')[0];
+                popup_2a2f7136e57e48119e3fcc22cff3389b.setContent(html_3ac17098c19942f99b11bfd1f5112742);
+            
+
+            marker_14167495547546c6b59339f86d543fb1.bindPopup(popup_2a2f7136e57e48119e3fcc22cff3389b);
+
+            
+        
+        
+            
+
+            var marker_a84fc1dc2b084cdba8586abe24ad6cbb = L.marker(
+                [56.775014784,15.882259139],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_c06ad7e717b4486881a75d55eff916b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_466d0ec0b86d4c7893668e9fd45dd957 = $('         <div id="html_466d0ec0b86d4c7893668e9fd45dd957"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Stefan Björn | Ö Bondetorp, Sandåkrarna, Kalmar | Koordinatnogrannhet (m): 100 | 1993-08-12 | Artportalen | Latitud: 15.882259139 | Longitud: 56.775014784</div>                 ')[0];
+                popup_c06ad7e717b4486881a75d55eff916b5.setContent(html_466d0ec0b86d4c7893668e9fd45dd957);
+            
+
+            marker_a84fc1dc2b084cdba8586abe24ad6cbb.bindPopup(popup_c06ad7e717b4486881a75d55eff916b5);
+
+            
+        
+        
+            
+
+            var marker_dde223e1ab7f4e6a90964bf61654b49a = L.marker(
+                [60.862874956,16.053469049],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_cf338c6d3b9c4e8ab39fd733906933a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd3d7521a79b47e485816beb06b3a201 = $('         <div id="html_cd3d7521a79b47e485816beb06b3a201"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Anders Kruger | Öratjärnvägen, Dalarnas | Koordinatnogrannhet (m): 50 | 2014-06-05 | Artportalen | Latitud: 16.053469049 | Longitud: 60.862874956</div>                 ')[0];
+                popup_cf338c6d3b9c4e8ab39fd733906933a6.setContent(html_cd3d7521a79b47e485816beb06b3a201);
+            
+
+            marker_dde223e1ab7f4e6a90964bf61654b49a.bindPopup(popup_cf338c6d3b9c4e8ab39fd733906933a6);
+
+            
+        
+        
+            
+
+            var marker_1e30899554e14b248f08fdef36f244e4 = L.marker(
+                [59.118451667,14.092716278],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_192199659fbb435d8bec122dfb781a28 = L.popup({maxWidth: '300'});
+
+            
+                var html_27e73ed76da34f458fb5f7c129bad1e8 = $('         <div id="html_27e73ed76da34f458fb5f7c129bad1e8"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Birger Gustavsson | Kilsvikens Naturreservat, Värmland | Koordinatnogrannhet (m): 500 | 2007-05-09 | Artportalen | Latitud: 14.092716278 | Longitud: 59.118451667</div>                 ')[0];
+                popup_192199659fbb435d8bec122dfb781a28.setContent(html_27e73ed76da34f458fb5f7c129bad1e8);
+            
+
+            marker_1e30899554e14b248f08fdef36f244e4.bindPopup(popup_192199659fbb435d8bec122dfb781a28);
+
+            
+        
+        
+            
+
+            var marker_a647e5d1f60745f7ae1802f107527f8c = L.marker(
+                [57.469567342,14.310782314],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_378c16465ce04f12b6c1326a20d76a4a = L.popup({maxWidth: '300'});
+
+            
+                var html_aa23270f1c37477cbfeab4f50d68a544 = $('         <div id="html_aa23270f1c37477cbfeab4f50d68a544"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Per Arne Fransson | svenarumsmaden, Jönköping | Koordinatnogrannhet (m): 100 | 2016-05-06 | Artportalen | Latitud: 14.310782314 | Longitud: 57.469567342</div>                 ')[0];
+                popup_378c16465ce04f12b6c1326a20d76a4a.setContent(html_aa23270f1c37477cbfeab4f50d68a544);
+            
+
+            marker_a647e5d1f60745f7ae1802f107527f8c.bindPopup(popup_378c16465ce04f12b6c1326a20d76a4a);
+
+            
+        
+        
+            
+
+            var marker_186c687cecb6401080f02a5941eff80d = L.marker(
+                [65.803371476,23.459530594],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_092bc7771cb44357a8879765cc4452f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_20e711694d2c4a3daf516fe1d1eedfbf = $('         <div id="html_20e711694d2c4a3daf516fe1d1eedfbf"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Jan Andersson | Åsenholmsgrundet, Norrbotten | Koordinatnogrannhet (m): 100 | 2016-06-05 | Artportalen | Latitud: 23.459530594 | Longitud: 65.803371476</div>                 ')[0];
+                popup_092bc7771cb44357a8879765cc4452f9.setContent(html_20e711694d2c4a3daf516fe1d1eedfbf);
+            
+
+            marker_186c687cecb6401080f02a5941eff80d.bindPopup(popup_092bc7771cb44357a8879765cc4452f9);
+
+            
+        
+        
+            
+
+            var marker_3133a59a5a2149849f58bbe8986dd1f5 = L.marker(
+                [65.803371476,23.459530594],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_0681e6a84f6c49f990356e610eba0d08 = L.popup({maxWidth: '300'});
+
+            
+                var html_93da4031291748f6b8560aaa1f5515b3 = $('         <div id="html_93da4031291748f6b8560aaa1f5515b3"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | märta sigurdsdotter | Åsenholmsgrundet, Norrbotten | Koordinatnogrannhet (m): 100 | 2016-05-31 | Artportalen | Latitud: 23.459530594 | Longitud: 65.803371476</div>                 ')[0];
+                popup_0681e6a84f6c49f990356e610eba0d08.setContent(html_93da4031291748f6b8560aaa1f5515b3);
+            
+
+            marker_3133a59a5a2149849f58bbe8986dd1f5.bindPopup(popup_0681e6a84f6c49f990356e610eba0d08);
+
+            
+        
+        
+            
+
+            var marker_18cc113a8e7147a8817bee7a02ebc942 = L.marker(
+                [63.781165895,20.30382985],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_a3b1c3f10cd8403b9b6bf1af61156886 = L.popup({maxWidth: '300'});
+
+            
+                var html_04e206557f85439f9558972005db7514 = $('         <div id="html_04e206557f85439f9558972005db7514"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Gudrun Norstedt | Alvik, E12 vid landningsbanans S ände, Västerbotten | Koordinatnogrannhet (m): 100 | 2016-06-07 | Artportalen | Latitud: 20.30382985 | Longitud: 63.781165895</div>                 ')[0];
+                popup_a3b1c3f10cd8403b9b6bf1af61156886.setContent(html_04e206557f85439f9558972005db7514);
+            
+
+            marker_18cc113a8e7147a8817bee7a02ebc942.bindPopup(popup_a3b1c3f10cd8403b9b6bf1af61156886);
+
+            
+        
+        
+            
+
+            var marker_ee1604dcdd9547aa8d28c2a2d5faebde = L.marker(
+                [57.248682522,14.746950317],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_edc7ac452bd744dca54bc1c54b5a0e5f = L.popup({maxWidth: '300'});
+
+            
+                var html_e6db7a5b08af49efb7fe3b373c98fdf6 = $('         <div id="html_e6db7a5b08af49efb7fe3b373c98fdf6"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Caroline Westerlund | Mårdhund, Jönköping | Koordinatnogrannhet (m): 100 | 2011-06-01 | Artportalen | Latitud: 14.746950317 | Longitud: 57.248682522</div>                 ')[0];
+                popup_edc7ac452bd744dca54bc1c54b5a0e5f.setContent(html_e6db7a5b08af49efb7fe3b373c98fdf6);
+            
+
+            marker_ee1604dcdd9547aa8d28c2a2d5faebde.bindPopup(popup_edc7ac452bd744dca54bc1c54b5a0e5f);
+
+            
+        
+        
+            
+
+            var marker_c4b9f427226c43838be7340ff11e954c = L.marker(
+                [65.900823656,22.623333812],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_6d2fbdd4de044d64b751ba45eaba1eaf = L.popup({maxWidth: '300'});
+
+            
+                var html_592e35f1c2c24d0c9ff15cdc8cf076a2 = $('         <div id="html_592e35f1c2c24d0c9ff15cdc8cf076a2"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Rolf G Gustafsson | Avan SV Töre, Norrbotten | Koordinatnogrannhet (m): 1000 | 2015-08-23 | Artportalen | Latitud: 22.623333812 | Longitud: 65.900823656</div>                 ')[0];
+                popup_6d2fbdd4de044d64b751ba45eaba1eaf.setContent(html_592e35f1c2c24d0c9ff15cdc8cf076a2);
+            
+
+            marker_c4b9f427226c43838be7340ff11e954c.bindPopup(popup_6d2fbdd4de044d64b751ba45eaba1eaf);
+
+            
+        
+        
+            
+
+            var marker_2db7a634d3264288aa4c3e25bcb6d767 = L.marker(
+                [65.419659494,21.545220724],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_554fc5879f524bd293506a2818c47fb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_45df120195424aab8bcef6e57d456fd3 = $('         <div id="html_45df120195424aab8bcef6e57d456fd3"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mattias Nordlund | Sladan, Norrbotten | Koordinatnogrannhet (m): 200 | 1993-05-22 | Artportalen | Latitud: 21.545220724 | Longitud: 65.419659494</div>                 ')[0];
+                popup_554fc5879f524bd293506a2818c47fb0.setContent(html_45df120195424aab8bcef6e57d456fd3);
+            
+
+            marker_2db7a634d3264288aa4c3e25bcb6d767.bindPopup(popup_554fc5879f524bd293506a2818c47fb0);
+
+            
+        
+        
+            
+
+            var marker_13c709a40c02485eb796b976e8c2813f = L.marker(
+                [63.42808695,13.026425019],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_566316da5dc34495930ce6707563a8f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_ddf5152bbc674bc59f5a3e156c620153 = $('         <div id="html_ddf5152bbc674bc59f5a3e156c620153"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | yngve larsson | Ullådalen, Jämtland | Koordinatnogrannhet (m): 300 | 2014-04-10 | Artportalen | Latitud: 13.026425019 | Longitud: 63.42808695</div>                 ')[0];
+                popup_566316da5dc34495930ce6707563a8f2.setContent(html_ddf5152bbc674bc59f5a3e156c620153);
+            
+
+            marker_13c709a40c02485eb796b976e8c2813f.bindPopup(popup_566316da5dc34495930ce6707563a8f2);
+
+            
+        
+        
+            
+
+            var marker_6322b72f7d694cf5b48f62523d1f53c3 = L.marker(
+                [58.932528619,17.949588035],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_77dd7fd1ef93401c8c3c917e29e4e29a = L.popup({maxWidth: '300'});
+
+            
+                var html_49466eaf6a134974af01e51ec912ed8b = $('         <div id="html_49466eaf6a134974af01e51ec912ed8b"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Göran Andervass | Alhagen, Stockholm | Koordinatnogrannhet (m): 1000 | 2014-02-02 | Artportalen | Latitud: 17.949588035 | Longitud: 58.932528619</div>                 ')[0];
+                popup_77dd7fd1ef93401c8c3c917e29e4e29a.setContent(html_49466eaf6a134974af01e51ec912ed8b);
+            
+
+            marker_6322b72f7d694cf5b48f62523d1f53c3.bindPopup(popup_77dd7fd1ef93401c8c3c917e29e4e29a);
+
+            
+        
+        
+            
+
+            var marker_2e88208257a84c1b8343bb0c4164bb06 = L.marker(
+                [63.904976768,19.841790366],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_3b8a9cc299df41c8befe2643d02b6543 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e0a19b3544c4e21a92fd4ee8a9c0cfc = $('         <div id="html_1e0a19b3544c4e21a92fd4ee8a9c0cfc"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Bertil Brånin | Brån, Västerbotten | Koordinatnogrannhet (m): 1000 | 2013-10-06 | Artportalen | Latitud: 19.841790366 | Longitud: 63.904976768</div>                 ')[0];
+                popup_3b8a9cc299df41c8befe2643d02b6543.setContent(html_1e0a19b3544c4e21a92fd4ee8a9c0cfc);
+            
+
+            marker_2e88208257a84c1b8343bb0c4164bb06.bindPopup(popup_3b8a9cc299df41c8befe2643d02b6543);
+
+            
+        
+        
+            
+
+            var marker_80b2f6da100f4978aa8f761eac6991fe = L.marker(
+                [64.725301895,18.682658223],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_84574395c3d845f89bb4cf02244890db = L.popup({maxWidth: '300'});
+
+            
+                var html_215a54c8b3aa4e65aee5951c8211306c = $('         <div id="html_215a54c8b3aa4e65aee5951c8211306c"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Ulf Ricklund | väg 365, Svartlidmyran, Västerbotten | Koordinatnogrannhet (m): 200 | 2013-06-19 | Artportalen | Latitud: 18.682658223 | Longitud: 64.725301895</div>                 ')[0];
+                popup_84574395c3d845f89bb4cf02244890db.setContent(html_215a54c8b3aa4e65aee5951c8211306c);
+            
+
+            marker_80b2f6da100f4978aa8f761eac6991fe.bindPopup(popup_84574395c3d845f89bb4cf02244890db);
+
+            
+        
+        
+            
+
+            var marker_43119246ce0a45c28c222dba49c324d6 = L.marker(
+                [60.204687591,17.327693347],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_6590931c9b4a4c439af80bc80db7b3ca = L.popup({maxWidth: '300'});
+
+            
+                var html_0c0b45d42c9e42f8b9ec959462f00c2c = $('         <div id="html_0c0b45d42c9e42f8b9ec959462f00c2c"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Marcus Sundbom | Hindersbo, Tämnaren, Uppsala | Koordinatnogrannhet (m): 100 | 2010-08-05 | Artportalen | Latitud: 17.327693347 | Longitud: 60.204687591</div>                 ')[0];
+                popup_6590931c9b4a4c439af80bc80db7b3ca.setContent(html_0c0b45d42c9e42f8b9ec959462f00c2c);
+            
+
+            marker_43119246ce0a45c28c222dba49c324d6.bindPopup(popup_6590931c9b4a4c439af80bc80db7b3ca);
+
+            
+        
+        
+            
+
+            var marker_d939945bfd314b67baac72f7b5d7d07a = L.marker(
+                [65.757416985,21.503161602],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_9d84c20085b94831b55897e4ee77629e = L.popup({maxWidth: '300'});
+
+            
+                var html_c9bcc1ab4a794d64a452c1ce7b725e92 = $('         <div id="html_c9bcc1ab4a794d64a452c1ce7b725e92"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Lars Sundberg | Vändträsk, Norrbotten | Koordinatnogrannhet (m): 50 | 2009-09-06 | Artportalen | Latitud: 21.503161602 | Longitud: 65.757416985</div>                 ')[0];
+                popup_9d84c20085b94831b55897e4ee77629e.setContent(html_c9bcc1ab4a794d64a452c1ce7b725e92);
+            
+
+            marker_d939945bfd314b67baac72f7b5d7d07a.bindPopup(popup_9d84c20085b94831b55897e4ee77629e);
+
+            
+        
+        
+            
+
+            var marker_82d7243a6aef4088b67f22e47deea2ba = L.marker(
+                [65.653017618,22.204233799],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_b79cd0d27d6047309f358e6ecfc3f7fc = L.popup({maxWidth: '300'});
+
+            
+                var html_75e662f6100243249799f29e82d905c7 = $('         <div id="html_75e662f6100243249799f29e82d905c7"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Sture Westerberg | Notfjärden, Norrbotten | Koordinatnogrannhet (m): 50 | 2009-02-01 | Artportalen | Latitud: 22.204233799 | Longitud: 65.653017618</div>                 ')[0];
+                popup_b79cd0d27d6047309f358e6ecfc3f7fc.setContent(html_75e662f6100243249799f29e82d905c7);
+            
+
+            marker_82d7243a6aef4088b67f22e47deea2ba.bindPopup(popup_b79cd0d27d6047309f358e6ecfc3f7fc);
+
+            
+        
+        
+            
+
+            var marker_75b2c90771714367b0ca986c9aa33312 = L.marker(
+                [65.881860538,21.688340315],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_bd6cc16785274412a1c586e92b2329a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_a262568cc6a147ba8e367271ecd8250e = $('         <div id="html_a262568cc6a147ba8e367271ecd8250e"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Brinnholmen, Övre Buddbyn, Norrbotten | Koordinatnogrannhet (m): 250 | 2008-11-07 | Artportalen | Latitud: 21.688340315 | Longitud: 65.881860538</div>                 ')[0];
+                popup_bd6cc16785274412a1c586e92b2329a2.setContent(html_a262568cc6a147ba8e367271ecd8250e);
+            
+
+            marker_75b2c90771714367b0ca986c9aa33312.bindPopup(popup_bd6cc16785274412a1c586e92b2329a2);
+
+            
+        
+        
+            
+
+            var marker_c6ded524e0d14fb6b5ba0c7d6eefcf52 = L.marker(
+                [65.890448517,21.666340574],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_d60e922fe4c04c56ae998fb8cb194fcb = L.popup({maxWidth: '300'});
+
+            
+                var html_9d059e5a67ce4d6dbef99ce8f6258fda = $('         <div id="html_9d059e5a67ce4d6dbef99ce8f6258fda"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Frängsmyrvägen, Heden, Övre Buddbyn, Norrbotten | Koordinatnogrannhet (m): 250 | 2008-11-07 | Artportalen | Latitud: 21.666340574 | Longitud: 65.890448517</div>                 ')[0];
+                popup_d60e922fe4c04c56ae998fb8cb194fcb.setContent(html_9d059e5a67ce4d6dbef99ce8f6258fda);
+            
+
+            marker_c6ded524e0d14fb6b5ba0c7d6eefcf52.bindPopup(popup_d60e922fe4c04c56ae998fb8cb194fcb);
+
+            
+        
+        
+            
+
+            var marker_d8a4a23cf8074e40a4ded7f2a8dca02c = L.marker(
+                [59.285729679,14.990600371],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_07343dedf1f1411eb9f243ec16822b5b = L.popup({maxWidth: '300'});
+
+            
+                var html_88cc96fd623d48a08ac52c88df8f1b77 = $('         <div id="html_88cc96fd623d48a08ac52c88df8f1b77"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Jan Andersson | Latorpsvägkorset, Örebro | Koordinatnogrannhet (m): 100 | 2016-06-28 | Artportalen | Latitud: 14.990600371 | Longitud: 59.285729679</div>                 ')[0];
+                popup_07343dedf1f1411eb9f243ec16822b5b.setContent(html_88cc96fd623d48a08ac52c88df8f1b77);
+            
+
+            marker_d8a4a23cf8074e40a4ded7f2a8dca02c.bindPopup(popup_07343dedf1f1411eb9f243ec16822b5b);
+
+            
+        
+        
+            
+
+            var marker_4bd3bec80c3c4a1bbaa274258803d9c8 = L.marker(
+                [59.976231521,17.739921248],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_b51a6c92d5b44158a775b9398711fde9 = L.popup({maxWidth: '300'});
+
+            
+                var html_7dbf3ffb50fc42ec916592e474f68957 = $('         <div id="html_7dbf3ffb50fc42ec916592e474f68957"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Lars Haneskog | Årby, Uppsala | Koordinatnogrannhet (m): 50 | 2016-03-10 | Artportalen | Latitud: 17.739921248 | Longitud: 59.976231521</div>                 ')[0];
+                popup_b51a6c92d5b44158a775b9398711fde9.setContent(html_7dbf3ffb50fc42ec916592e474f68957);
+            
+
+            marker_4bd3bec80c3c4a1bbaa274258803d9c8.bindPopup(popup_b51a6c92d5b44158a775b9398711fde9);
+
+            
+        
+        
+            
+
+            var marker_2d8bdb8956e34cad9b1dfd775cc0b434 = L.marker(
+                [59.664770705,16.34508914],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_c18612a96c834a32aee76a3249aceae3 = L.popup({maxWidth: '300'});
+
+            
+                var html_435e78cb0e514e4fac79169c2fcdc2eb = $('         <div id="html_435e78cb0e514e4fac79169c2fcdc2eb"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Ralf Lundmark, Andreas Press | Ålsätra, 500 m V, Västmanland | Koordinatnogrannhet (m): 100 | 2014-10-07 | Artportalen | Latitud: 16.34508914 | Longitud: 59.664770705</div>                 ')[0];
+                popup_c18612a96c834a32aee76a3249aceae3.setContent(html_435e78cb0e514e4fac79169c2fcdc2eb);
+            
+
+            marker_2d8bdb8956e34cad9b1dfd775cc0b434.bindPopup(popup_c18612a96c834a32aee76a3249aceae3);
+
+            
+        
+        
+            
+
+            var marker_5f948bc4ec8a4affb33b1f3897f402a9 = L.marker(
+                [59.275395465,17.844610911],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_91cfa4bb446e453abc79db1488f5fa76 = L.popup({maxWidth: '300'});
+
+            
+                var html_15af463dd6814c1f8507d491c759646a = $('         <div id="html_15af463dd6814c1f8507d491c759646a"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Heather Wood | Jungfrusund, Stockholm | Koordinatnogrannhet (m): 5 | 2012-04-01 | Artportalen | Latitud: 17.844610911 | Longitud: 59.275395465</div>                 ')[0];
+                popup_91cfa4bb446e453abc79db1488f5fa76.setContent(html_15af463dd6814c1f8507d491c759646a);
+            
+
+            marker_5f948bc4ec8a4affb33b1f3897f402a9.bindPopup(popup_91cfa4bb446e453abc79db1488f5fa76);
+
+            
+        
+        
+            
+
+            var marker_00fb4cca614b4a4d9c28692cb225a721 = L.marker(
+                [60.433837771,18.426692266],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_dd8b5ead1fbc499a8b2de8cc9ddb20ba = L.popup({maxWidth: '300'});
+
+            
+                var html_a7efc6f9e9fd4a97b529f5c966d1a513 = $('         <div id="html_a7efc6f9e9fd4a97b529f5c966d1a513"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Ulf Eriksson | SO Knösen i Söderboda, Uppsala | Koordinatnogrannhet (m): 50 | 2013-09-10 | Artportalen | Latitud: 18.426692266 | Longitud: 60.433837771</div>                 ')[0];
+                popup_dd8b5ead1fbc499a8b2de8cc9ddb20ba.setContent(html_a7efc6f9e9fd4a97b529f5c966d1a513);
+            
+
+            marker_00fb4cca614b4a4d9c28692cb225a721.bindPopup(popup_dd8b5ead1fbc499a8b2de8cc9ddb20ba);
+
+            
+        
+        
+            
+
+            var marker_7f76bb52acfe4101bd79c00968ad5386 = L.marker(
+                [60.571975972,17.941440315],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_f40c65798f594a849ad3274d1aeac00b = L.popup({maxWidth: '300'});
+
+            
+                var html_c97f99fb5355416d9d0283da7eead96e = $('         <div id="html_c97f99fb5355416d9d0283da7eead96e"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Per Holliland | Hållen, Uppsala | Koordinatnogrannhet (m): 750 | 2013-06-02 | Artportalen | Latitud: 17.941440315 | Longitud: 60.571975972</div>                 ')[0];
+                popup_f40c65798f594a849ad3274d1aeac00b.setContent(html_c97f99fb5355416d9d0283da7eead96e);
+            
+
+            marker_7f76bb52acfe4101bd79c00968ad5386.bindPopup(popup_f40c65798f594a849ad3274d1aeac00b);
+
+            
+        
+        
+            
+
+            var marker_25607383858f4a7fb214100b96bbef6e = L.marker(
+                [58.89929763,17.922890105],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_0436a0912e5d4752a27fc040ceb5edf6 = L.popup({maxWidth: '300'});
+
+            
+                var html_26b474a7438b41269e546faef93ca259 = $('         <div id="html_26b474a7438b41269e546faef93ca259"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Bengt Jonsson | Nickstaviken, Stockholm | Koordinatnogrannhet (m): 50 | 2013-01-31 | Artportalen | Latitud: 17.922890105 | Longitud: 58.89929763</div>                 ')[0];
+                popup_0436a0912e5d4752a27fc040ceb5edf6.setContent(html_26b474a7438b41269e546faef93ca259);
+            
+
+            marker_25607383858f4a7fb214100b96bbef6e.bindPopup(popup_0436a0912e5d4752a27fc040ceb5edf6);
+
+            
+        
+        
+            
+
+            var marker_5c5eb4739e01474ab2a8c5e1eee21af9 = L.marker(
+                [56.73769148,15.512422737],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_24f758d6b1bf4e429abe623479df37a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_09989f05cdb34cfcad8a1f6912d9b1c3 = $('         <div id="html_09989f05cdb34cfcad8a1f6912d9b1c3"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Hans Lundgren | Eriksmåla Lyckebyån, Kalmar | Koordinatnogrannhet (m): 50 | 2012-01-08 | Artportalen | Latitud: 15.512422737 | Longitud: 56.73769148</div>                 ')[0];
+                popup_24f758d6b1bf4e429abe623479df37a2.setContent(html_09989f05cdb34cfcad8a1f6912d9b1c3);
+            
+
+            marker_5c5eb4739e01474ab2a8c5e1eee21af9.bindPopup(popup_24f758d6b1bf4e429abe623479df37a2);
+
+            
+        
+        
+            
+
+            var marker_43ca96406aa9490db59eb3f7e1bc50e8 = L.marker(
+                [63.397474893,16.029079789],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_1dc9c9241c8248b6b3d48eecbdf6becb = L.popup({maxWidth: '300'});
+
+            
+                var html_82ad06cc180f447989d378d93c1ece9e = $('         <div id="html_82ad06cc180f447989d378d93c1ece9e"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Ulla Falkdalen | Storkåtamyran, S Björkvattnet, Jämtland | Koordinatnogrannhet (m): 50 | 2009-06-23 | Artportalen | Latitud: 16.029079789 | Longitud: 63.397474893</div>                 ')[0];
+                popup_1dc9c9241c8248b6b3d48eecbdf6becb.setContent(html_82ad06cc180f447989d378d93c1ece9e);
+            
+
+            marker_43ca96406aa9490db59eb3f7e1bc50e8.bindPopup(popup_1dc9c9241c8248b6b3d48eecbdf6becb);
+
+            
+        
+        
+            
+
+            var marker_dd31a25cc620491792d1a1b7ef888af3 = L.marker(
+                [60.212368815,15.1052793],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_f5dcaffef6944ba0a8def8e920e9fd42 = L.popup({maxWidth: '300'});
+
+            
+                var html_9d008dd054334c43a6df7697c4c5a605 = $('         <div id="html_9d008dd054334c43a6df7697c4c5a605"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Bo Hultgren, Annika Hultgren, Bo Hultgren | Norrvik, Dalarnas | Koordinatnogrannhet (m): 50 | 2009-06-24 | Artportalen | Latitud: 15.1052793 | Longitud: 60.212368815</div>                 ')[0];
+                popup_f5dcaffef6944ba0a8def8e920e9fd42.setContent(html_9d008dd054334c43a6df7697c4c5a605);
+            
+
+            marker_dd31a25cc620491792d1a1b7ef888af3.bindPopup(popup_f5dcaffef6944ba0a8def8e920e9fd42);
+
+            
+        
+        
+            
+
+            var marker_deaaaceb4316452ca6afffe08870db9f = L.marker(
+                [59.368624657,13.991080887],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_98e47ae7500a4d84a38e7cdb37909e18 = L.popup({maxWidth: '300'});
+
+            
+                var html_8de494f0a9704f5ca67252a6b315d7bc = $('         <div id="html_8de494f0a9704f5ca67252a6b315d7bc"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Thomas Lindell | Ölmeviksområdet, Värmland | Koordinatnogrannhet (m): 5000 | 2009-05-21 | Artportalen | Latitud: 13.991080887 | Longitud: 59.368624657</div>                 ')[0];
+                popup_98e47ae7500a4d84a38e7cdb37909e18.setContent(html_8de494f0a9704f5ca67252a6b315d7bc);
+            
+
+            marker_deaaaceb4316452ca6afffe08870db9f.bindPopup(popup_98e47ae7500a4d84a38e7cdb37909e18);
+
+            
+        
+        
+            
+
+            var marker_cb59601ed8694831bbebb7e5216c53c7 = L.marker(
+                [65.493333353,17.004165097],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_6b4bc1ded26b46aea0b89b9a439f8730 = L.popup({maxWidth: '300'});
+
+            
+                var html_261af7b8ce86464db033eb0960015b35 = $('         <div id="html_261af7b8ce86464db033eb0960015b35"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Fredrik Grensman | Gneiso, Västerbotten | Koordinatnogrannhet (m): 50 | 2008-12-30 | Artportalen | Latitud: 17.004165097 | Longitud: 65.493333353</div>                 ')[0];
+                popup_6b4bc1ded26b46aea0b89b9a439f8730.setContent(html_261af7b8ce86464db033eb0960015b35);
+            
+
+            marker_cb59601ed8694831bbebb7e5216c53c7.bindPopup(popup_6b4bc1ded26b46aea0b89b9a439f8730);
+
+            
+        
+        
+            
+
+            var marker_cf24b0e10e7a46e6a83fce9f3be119c0 = L.marker(
+                [64.150667214,19.916377484],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_580bbee2dff84e3088cf4961b32a568f = L.popup({maxWidth: '300'});
+
+            
+                var html_5e50d3457fa84dec818a57d350cae2d7 = $('         <div id="html_5e50d3457fa84dec818a57d350cae2d7"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Tim Hipkiss | Krycklan, Trollberget, Västerbotten | Koordinatnogrannhet (m): 50 | 1999-06-06 | Artportalen | Latitud: 19.916377484 | Longitud: 64.150667214</div>                 ')[0];
+                popup_580bbee2dff84e3088cf4961b32a568f.setContent(html_5e50d3457fa84dec818a57d350cae2d7);
+            
+
+            marker_cf24b0e10e7a46e6a83fce9f3be119c0.bindPopup(popup_580bbee2dff84e3088cf4961b32a568f);
+
+            
+        
+        
+            
+
+            var marker_86ccd4055dee4342b376daed40282f00 = L.marker(
+                [65.911685901,22.081856308],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_d6b814c58450459687b1ceab56b9b703 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1ce2c0fa1324729b481d009994ec1a9 = $('         <div id="html_b1ce2c0fa1324729b481d009994ec1a9"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Söribäcken, Mossabäcken V Prästholm, Norrbotten | Koordinatnogrannhet (m): 50 | 2008-11-05 | Artportalen | Latitud: 22.081856308 | Longitud: 65.911685901</div>                 ')[0];
+                popup_d6b814c58450459687b1ceab56b9b703.setContent(html_b1ce2c0fa1324729b481d009994ec1a9);
+            
+
+            marker_86ccd4055dee4342b376daed40282f00.bindPopup(popup_d6b814c58450459687b1ceab56b9b703);
+
+            
+        
+        
+            
+
+            var marker_3f190f3b68684c3483fed4e5f230b399 = L.marker(
+                [65.877616869,21.674838636],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_0a40533277ee4ee9b19687187a2dd4ab = L.popup({maxWidth: '300'});
+
+            
+                var html_a8d97d8fc9094cfe8a7e2d3009f3d617 = $('         <div id="html_a8d97d8fc9094cfe8a7e2d3009f3d617"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Buddbyträsket, Ljusåmynningen, Norrbotten | Koordinatnogrannhet (m): 250 | 2008-11-06 | Artportalen | Latitud: 21.674838636 | Longitud: 65.877616869</div>                 ')[0];
+                popup_0a40533277ee4ee9b19687187a2dd4ab.setContent(html_a8d97d8fc9094cfe8a7e2d3009f3d617);
+            
+
+            marker_3f190f3b68684c3483fed4e5f230b399.bindPopup(popup_0a40533277ee4ee9b19687187a2dd4ab);
+
+            
+        
+        
+            
+
+            var marker_31862194c71d4a93b4c871708af281ad = L.marker(
+                [65.877616869,21.674838636],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_a3a31ef5896b4aa7b8392a58777abe39 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b005e886224440f956239c1625d8c5a = $('         <div id="html_0b005e886224440f956239c1625d8c5a"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Mats Bergquist | Buddbyträsket, Ljusåmynningen, Norrbotten | Koordinatnogrannhet (m): 250 | 2008-11-06 | Artportalen | Latitud: 21.674838636 | Longitud: 65.877616869</div>                 ')[0];
+                popup_a3a31ef5896b4aa7b8392a58777abe39.setContent(html_0b005e886224440f956239c1625d8c5a);
+            
+
+            marker_31862194c71d4a93b4c871708af281ad.bindPopup(popup_a3a31ef5896b4aa7b8392a58777abe39);
+
+            
+        
+        
+            
+
+            var marker_9f6e308dbd7c496f9143104c4b47e321 = L.marker(
+                [63.891760376,19.864356046],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_a852bc1abbfb488081ad41f0246f7f71 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a8414d5da0347a6ab1f2e689b148223 = $('         <div id="html_5a8414d5da0347a6ab1f2e689b148223"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Bertil Brånin | Brånsjön, Västerbotten | Koordinatnogrannhet (m): 1000 | 2007-06-15 | Artportalen | Latitud: 19.864356046 | Longitud: 63.891760376</div>                 ')[0];
+                popup_a852bc1abbfb488081ad41f0246f7f71.setContent(html_5a8414d5da0347a6ab1f2e689b148223);
+            
+
+            marker_9f6e308dbd7c496f9143104c4b47e321.bindPopup(popup_a852bc1abbfb488081ad41f0246f7f71);
+
+            
+        
+        
+            
+
+            var marker_8892a08fa9184001b2ecea99290b0791 = L.marker(
+                [64.385201481,16.586196962],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_c15bccef53d1414ca14b09abc2a70905 = L.popup({maxWidth: '300'});
+
+            
+                var html_b22866be14664023b9ba22ee96da1004 = $('         <div id="html_b22866be14664023b9ba22ee96da1004"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Michael Schneider | Häggås, Dorotea, Västerbotten | Koordinatnogrannhet (m): 1000 | 2008-07-28 | Artportalen | Latitud: 16.586196962 | Longitud: 64.385201481</div>                 ')[0];
+                popup_c15bccef53d1414ca14b09abc2a70905.setContent(html_b22866be14664023b9ba22ee96da1004);
+            
+
+            marker_8892a08fa9184001b2ecea99290b0791.bindPopup(popup_c15bccef53d1414ca14b09abc2a70905);
+
+            
+        
+        
+            
+
+            var marker_c7b67ab1d81f4063add19f445ed811fa = L.marker(
+                [59.146072674,17.905606519],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_e199683887ef4ddcb77dd47b4198bdf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa4be9f71e6c4f3fb384610008d61080 = $('         <div id="html_fa4be9f71e6c4f3fb384610008d61080"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Huddinge Kommun/s.bolander Bolander | Pålamalm, Stockholm | Koordinatnogrannhet (m): 50 | 1995-07-06 | Artportalen | Latitud: 17.905606519 | Longitud: 59.146072674</div>                 ')[0];
+                popup_e199683887ef4ddcb77dd47b4198bdf4.setContent(html_fa4be9f71e6c4f3fb384610008d61080);
+            
+
+            marker_c7b67ab1d81f4063add19f445ed811fa.bindPopup(popup_e199683887ef4ddcb77dd47b4198bdf4);
+
+            
+        
+        
+            
+
+            var marker_2faf77cca2824e3188893a7859756ebd = L.marker(
+                [59.845494565,17.981271615],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_b1ec111644f9454f8b7b09c99fd3800d = L.popup({maxWidth: '300'});
+
+            
+                var html_c612532fc3ee46bab84d26c870e3f07b = $('         <div id="html_c612532fc3ee46bab84d26c870e3f07b"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Henrik Berg | Ösby, Uppsala | Koordinatnogrannhet (m): 250 | 1997-06-30 | Artportalen | Latitud: 17.981271615 | Longitud: 59.845494565</div>                 ')[0];
+                popup_b1ec111644f9454f8b7b09c99fd3800d.setContent(html_c612532fc3ee46bab84d26c870e3f07b);
+            
+
+            marker_2faf77cca2824e3188893a7859756ebd.bindPopup(popup_b1ec111644f9454f8b7b09c99fd3800d);
+
+            
+        
+        
+            
+
+            var marker_f35fe09390c7428eb6486d497b168b6f = L.marker(
+                [59.621768532,16.6680784],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_bd1eace14e994a088681c93d588ee50a = L.popup({maxWidth: '300'});
+
+            
+                var html_bcf8af3dcac542a9b270a6f23e444bc9 = $('         <div id="html_bcf8af3dcac542a9b270a6f23e444bc9"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Henrik Berg | Närlunda, Västmanland | Koordinatnogrannhet (m): 50 | 1997-03-31 | Artportalen | Latitud: 16.6680784 | Longitud: 59.621768532</div>                 ')[0];
+                popup_bd1eace14e994a088681c93d588ee50a.setContent(html_bcf8af3dcac542a9b270a6f23e444bc9);
+            
+
+            marker_f35fe09390c7428eb6486d497b168b6f.bindPopup(popup_bd1eace14e994a088681c93d588ee50a);
+
+            
+        
+        
+            
+
+            var marker_5f01ed099d8b44f6b6697572327b14b4 = L.marker(
+                [59.977786687,17.739678703],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_3fb254c37e09465fa6c905d94f2faf02 = L.popup({maxWidth: '300'});
+
+            
+                var html_1bd427478f5e4368b8ade7f9d8e19a40 = $('         <div id="html_1bd427478f5e4368b8ade7f9d8e19a40"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Anna Olofsson | Ängeby, Uppsala | Koordinatnogrannhet (m): 10 | 2014-04-06 | Artportalen | Latitud: 17.739678703 | Longitud: 59.977786687</div>                 ')[0];
+                popup_3fb254c37e09465fa6c905d94f2faf02.setContent(html_1bd427478f5e4368b8ade7f9d8e19a40);
+            
+
+            marker_5f01ed099d8b44f6b6697572327b14b4.bindPopup(popup_3fb254c37e09465fa6c905d94f2faf02);
+
+            
+        
+        
+            
+
+            var marker_c16c8dc9bd7047b195df5ee10b7a75db = L.marker(
+                [65.838895871,21.943012698],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d53520f8cd9541b1866ae1fb614d077f);
+            
+        
+            
+            var popup_1866bd4ebb71409f8976fde29f342edb = L.popup({maxWidth: '300'});
+
+            
+                var html_2cbd3ed0637a48cebd001e72af735c38 = $('         <div id="html_2cbd3ed0637a48cebd001e72af735c38"                 style="width: 100.0%; height: 100.0%;">                 Nyctereutes procyonoides - Mårdhund | Stefan Lithner | Vibbyn, Norrbotten | Koordinatnogrannhet (m): 100 | 2010-07-27 | Artportalen | Latitud: 21.943012698 | Longitud: 65.838895871</div>                 ')[0];
+                popup_1866bd4ebb71409f8976fde29f342edb.setContent(html_2cbd3ed0637a48cebd001e72af735c38);
+            
+
+            marker_c16c8dc9bd7047b195df5ee10b7a75db.bindPopup(popup_1866bd4ebb71409f8976fde29f342edb);
+
+            
+        
+        
+        
+        </script>
+        
